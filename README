@@ -1,0 +1,234 @@
+# 🤖 AI Code Reviewer
+
+A **production-level AI-powered code reviewer** that analyzes code across multiple languages, provides intelligent feedback, generates improved code suggestions, and tracks user history — all through an interactive web interface.
+
+---
+
+## 🚀 Features
+
+### 🧠 AI-Powered Code Review
+
+* Uses local LLM (Ollama) for intelligent analysis
+* Detects bugs, code smells, and best practice violations
+* Provides structured feedback and suggestions
+
+### ⚙️ Hybrid Scoring System
+
+* Combines:
+
+  * AI-based evaluation (60%)
+  * Rule-based static analysis (40%)
+* Produces a final **code quality score**
+
+### 🌐 Multi-Language Support
+
+* Python
+* JavaScript
+* Java
+* C++
+
+### 🛠️ Auto Code Improvement
+
+* Generates improved versions of code
+* Maintains original logic
+* Provides multiple variations (regenerate option)
+
+### 👤 User Authentication
+
+* Simple login system
+* Session-based access control
+
+### 📜 History Tracking
+
+* Stores past analyses per user
+* Displays recent activity
+* Downloadable history reports
+
+### 📥 Export Features
+
+* Download improved code
+* Download analysis history
+
+### 🖥️ Interactive UI
+
+* Built with Streamlit
+* Clean, responsive interface
+* Real-time feedback
+
+---
+
+## 🏗️ Project Structure
+
+```bash
+ai-code-reviewer/
+│
+├── app.py
+│
+├── analyzer/
+│   ├── ai_review.py
+│   └── static_analysis.py
+│
+├── parser/
+│   └── code_parser.py
+│
+├── utils/
+│   ├── formatter.py
+│   └── auth_storage.py
+│
+├── data/
+│   └── history/
+│
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## ⚙️ Installation
+
+### 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/ai-code-reviewer.git
+cd ai-code-reviewer
+```
+
+---
+
+### 2️⃣ Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### 3️⃣ Setup Environment Variables
+
+```bash
+export JARVIS_USER=admin
+export JARVIS_PASS=1234
+```
+
+(For Windows PowerShell:)
+
+```powershell
+setx JARVIS_USER "admin"
+setx JARVIS_PASS "1234"
+```
+
+---
+
+### 4️⃣ Start Ollama (AI Engine)
+
+```bash
+ollama run phi3
+```
+
+---
+
+### 5️⃣ Run Application
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## 🧪 Usage
+
+1. Login using credentials
+2. Upload a code file
+3. Click **Analyze Code**
+4. View:
+
+   * Static analysis
+   * AI feedback
+   * Hybrid score
+5. Generate improved code
+6. Download results or view history
+
+---
+
+## 📊 Example Output
+
+```text
+AI Score: 7/10
+Rule Score: 6/10
+Final Score: 6.6/10
+
+Issues:
+- Missing error handling
+- Poor variable naming
+
+Suggestions:
+- Improve naming conventions
+- Add try-except blocks
+```
+
+---
+
+## 🧠 Tech Stack
+
+* **Frontend:** Streamlit
+* **Backend:** Python
+* **AI Model:** Ollama (Local LLM)
+* **Static Analysis:** AST (Python)
+* **Automation:** Custom rule engine
+
+---
+
+## 🔐 Authentication
+
+* Lightweight session-based login
+* Credentials via environment variables
+* Per-user data isolation
+
+---
+
+## 📌 Key Highlights
+
+* Combines **AI + rule-based analysis**
+* Supports **multiple programming languages**
+* Includes **auto code generation & improvement**
+* Tracks **user activity history**
+* Designed with **modular architecture**
+
+---
+
+## 🚀 Future Improvements
+
+* Database integration (MongoDB / SQLite)
+* Advanced authentication (JWT)
+* CI/CD integration
+* Code diff visualization
+* Team collaboration features
+
+---
+
+## 👨‍💻 Author
+
+**Anirodh Padhy**
+
+---
+
+## ⭐ Support
+
+If you like this project:
+
+* ⭐ Star the repo
+* 🍴 Fork it
+* 📢 Share it
+
+---
+
+## 🏁 Conclusion
+
+This project demonstrates a **real-world AI developer tool** combining:
+
+* Machine Learning
+* Software Engineering
+* Automation
+* User Experience
+
+Built with a focus on **performance, usability, and scalability** 🚀
